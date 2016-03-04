@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>WebRTC (PeerJS) - Chat and Video!</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="A sample of PeerJS video & chat">
+        <meta name="keywords" content="PeerJS, webRTC, video, chat">
+        <meta name="author" content="Perelan">
+    </head>
+    
+    <body>
+        <h1>WebRTC (PeerJS) - Chat and Video!</h1>
+        
+        <br><br>
+
+        Name:     <textarea id="yourName"></textarea>
+        <br><br>
+        Your ID:  <textarea id="yourID"></textarea> 
+        Their ID: <textarea id="theirID"></textarea>
+        <button id="connect">Connect</button>
+        <br>
+        
+        <br><br>
+        <label>Enter Message:</label>
+        <textarea id="msg"></textarea>
+        <button id="send">Send</button>
+        <pre id="message"></pre>
+        
+        <br><br>
+        <video width="320" height="240" id="video" autoplay muted></video>
+        <video id="others-video" autoplay></video>
+    </body>
+    
+    <script src="http://cdn.peerjs.com/0.3/peer.min.js"></script>
+    <script src="apps.js?version=1"></script>
+</html>
